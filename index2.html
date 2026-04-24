@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      button {
+        display: none;
+      }
+      .hidden {
+        display: none;
+      }
+      @media screen and (max-width: 500px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        button {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>
+      <img src="menu_icon.png" width="25" height="25" />
+    </button>
+    <nav>
+      <h2>Home</h2>
+      <h2>Address</h2>
+      <h2>Contacts</h2>
+      <h2>About</h2>
+    </nav>
+    <script>
+      const btn = document.querySelector("button");
+      const nav = document.querySelector("nav");
+      const img = btn.querySelector("img");
+
+      btn.addEventListener("click", function () {
+        const openNav = nav.classList.toggle("hidden");
+        img.src = openNav === true ? "menu_icon.png" : "x_icon.png";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body{
+    background-color: rgb(240, 240, 232);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(18, 154, 8);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+      .burger {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+     .burger {
+        display: none;
+      }
+      .hidden {
+        display: none;
+      }
+
+button{
+    background-color: rgb(59, 141, 59);
+    width: 100px;
+    height:40px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+}
+
+.center1{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.white{
+    
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 1040px;
+    height: 530px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+.gray{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(208, 208, 208);
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.texts{
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+@media screen and (max-width: 768px){
+  nav{
+    padding: 10px 20px;
+  }
+
+  /* nav p{
+    display: none; 
+  } */
+        nav {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+       .burger {
+          display: block;
+        }
+
+  button{
+    /* width: 140px;
+    height: 45px; */
+    display: none;
+  }
+
+  .center1{
+    padding: 20px;
+    text-align: center;
+  }
+
+  .center1 h1{
+    font-size: 28px;
+  }
+
+  .center1 p{
+    font-size: 14px;
+  }
+
+  .white{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .white img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .cards{
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .center{
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .gray{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .texts{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+}
+
+
+</style>
+
+<body>
+
+    <button class="burger">
+      <img src="menun_icon.svg" width="25" height="25" />
+    </button>
+
+<nav>
+  <h1>Healthy Recipe Finder</h1>
+    <p>Home</p>
+    <p>About</p>
+    <p>Recipes</p>
+  <button>Browse recipes</button>
+</nav>
+
+  
+
+
+    <div class="center1">
+    <h1 style=" color: rgb(43, 113, 43);">Healthy meals,zero fuss</h1>
+    <p>Discover eight, whole-food recipes that you can cook tonught- no processed junk, no guesswork.</p>
+    <button>Start exploring</button>
+     <div class="white">
+        <img src="cooking.jpeg" style="width: 1000px; height: 500px; border-radius: 10px; margin-left: 5px; margin-top: 13px;">
+    </div>
+    </div>
+   
+   
+
+
+    
+    <h1 style="text-align: center; color: rgb(40, 104, 40);">What you'll get</h1>
+    
+    <div class="cards" style="margin-top: 20px;">
+    <div class="card">
+    <img src="carrot.png" style="width: 35px; height: 35px;">
+    <h4 style=" color: rgb(43, 113, 43);" >Whole-food recipes</h4>
+    <p>Each dish uses everyday, unprocessed ingredients.</p>
+    </div>
+
+    <div class="card">
+    <img src="carrot.png" style="width: 35px; height: 35px;">
+    <h4 style=" color: rgb(43, 113, 43);">Minimun fuss</h4>
+    <p>All recipes are designed to make eating healthy quik and easy.</p>
+    </div>
+
+    <div class="card">
+    <img src="carrot.png" style="width: 35px; height: 35px;">   
+    <h4 style=" color: rgb(43, 113, 43);">Search in seconds</h4>
+    <p>Filter by name or ingredient and jump straight to the recipe you need.</p>
+    </div>
+    </div>
+
+    <div class="center">
+    <div class="left">
+    <h1 style="color: rgb(33, 102, 33);">Built for real life</h1>
+    <p>Cooking shouldn't be coomplicated. These recipes come in under 30 minutes of active time,fit busy schedules,and taste good enough to repeat.</p>
+    <p>Whether you're new to the kkitchen or just need fresh ideas, we've got you covered.</p>
+  
+    </div>
+    <div class="right">
+        <img src="chef.jpeg" style="width: 550px; height: 350px; border-radius: 10px;">
+    </div>
+    </div>
+    
+    <div class="bottom">
+        <div class="gray">
+            <h2 style=" color: rgb(43, 113, 43);">Ready to cook smarter?</h2>
+            <p style="margin-bottom: 30px; ">Hit the button, pick a recipe, and get dinner on the table--fast.</p>
+            <button>Browse recipes</button>
+        </div>
+        
+    </div>
+    <div class="texts">
+        <p>Made with love  </p>
+        <img src="facebook (фон удален).png" style="width: 35px; height: 35px;">
+        <img src="facebook (фон удален).png" style="width: 35px; height: 35px;">
+        <img src="facebook (фон удален).png" style="width: 35px; height: 35px;">
+
+    </div>
+
+
+
+    <script>
+      const btn = document.querySelector(".burger");
+      const nav = document.querySelector("nav");
+      const img = btn.querySelector("img");
+
+      btn.addEventListener("click", function () {
+        const openNav = nav.classList.toggle("hidden");
+        img.src = openNav === true ? "menun_icon.svg" : "x_icon.png";
+      });
+    </script>
+
+
+
+
+
+
+</body>
+</html>
+
